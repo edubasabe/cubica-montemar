@@ -1,0 +1,30 @@
+.section {
+  @include sm-device {
+    padding: 6rem 0;
+  }
+
+  &__intro {
+    background: url('../images/interior.jpg') no-repeat center;
+
+    @include sm-device {
+      min-height: 66rem;
+    }
+
+    &__title {
+      color: $blanco;
+      text-align: center;
+
+      @include md-device {
+        font-size: 2rem;
+      }
+    }
+
+    &__text {
+      color: $blanco;
+
+      @include md-device {
+        font-size: 2rem;
+      }
+    }
+  }
+}

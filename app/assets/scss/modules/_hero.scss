@@ -1,0 +1,7 @@
+.hero {
+  background: url('../images/proyecto.jpg') no-repeat center;
+
+  @include sm-device {
+    min-height: 66rem;
+  }
+}

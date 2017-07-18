@@ -23,7 +23,7 @@
 
 
 <!-- Hero -->
-<section class="" id="section-hero">
+<section class="hero" id="section-hero">
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
@@ -40,16 +40,20 @@
 </section>
 
 <!-- Intro -->
-<section id="section-intro">
+<section class="section section__intro" id="section-intro">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
-        <p class="lead">Cúbica Montemar se encuentra ubicado en el exclusivo sector Bosques de Montemar, Concón. 3 edificios de 5 pisos, 55 departamentos con orientación norte, todos con vista al mar.</p>
+        <p class="section__intro__title">Cúbica Montemar se encuentra ubicado en el exclusivo sector Bosques de Montemar, Concón. 3 edificios de 5 pisos, 55 departamentos con orientación norte, todos con vista al mar.</p>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-12">
-        <p>Departamentos de 2 dormitorios y 2 baños, desde 99 m2 hasta 108 m2.
+      <div class="col-sm-12 col-sm-6 col-sm-offset-3">
+        <p class="section__intro__text">Departamentos de 2 dormitorios y 2 baños, desde 99 m2 hasta 108 m2.
 Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita desde 164 m2 hasta 194 m2.
 * Todas estas superficies incluyen terrazas.</p>
       </div>
@@ -58,11 +62,11 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
 </section>
 
 <!-- Tipos -->
-<section id="section-tipos">
+<section class="section" id="section-tipos">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center">Tipos de Departamentos</h2>
+        <h2 class="headline headline-color--verde text-center">Tipos de Departamentos</h2>
       </div>
     </div>
     <div class="row">
@@ -86,7 +90,7 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
                         <img :src="depto.imgsrc" :alt="depto.title" class="img-responsive">
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        <h3>{{ depto.title }}</h3>
+                        <h3 class="text-color--verde">{{ depto.title }}</h3>
                         <p>{{ depto.desc }}</p>
                         <p>{{ depto.nota }}</p>
                     </div>
@@ -99,43 +103,43 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
 </section>
 
 <!-- Fuerza de Ventas -->
-<section id="section-domotica">
+<section class="section" id="section-domotica">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center">Tu hogar inteligente</h2>
-        <p class="lead text-center">Proyecto Cubica Montemar incluye los siguientes productos FIBARO</p>
+        <h2 class="headline headline-color--verde text-center">Tu hogar inteligente</h2>
+        <p class="lead headline-color--gris text-center">Proyecto Cubica Montemar incluye los siguientes productos FIBARO</p>
       </div>
     </div>
-    <div class="row" id="productos">
+    <div class="row product" id="productos">
       <div class="col-xs-6 col-sm-3" v-for="producto in productos">
-        <img :src="producto.imgsrc" :alt="producto.title">
-        <h4>{{ producto.title }}</h4>
-        <p>{{ producto.cant }}</p>
-        <p>{{ producto.desc }}</p>
-        <a :href="producto.link">Ver más detalles</a>
+        <img :src="producto.imgsrc" :alt="producto.title" class="img-responsive">
+        <h4 class="text-center text-color--verde">{{ producto.title }}</h4>
+        <p class="text-center text-color--verde">[{{ producto.cant }}]</p>
+        <p class="text-center text-color--gris">{{ producto.desc }}</p>
+        <p class="text-center text-color--verde"> <a :href="producto.link" class="btn btn-primary">Ver más detalles</a></p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section>
+<section class="section cta">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center">¿Estás interesado en el proyecto?</h2>
+        <h2 class="headline headline-color--blanco text-center">¿Estás interesado en el proyecto?</h2>
         <p class="text-center"><button type="button" name="button" class="btn btn-primary btn-lg">SOLICITA UNA COTIZACIÓN</button></p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="section-ventas">
+<section class="section sala-ventas" id="section-ventas">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-center">Sala de ventas</h2>
+        <h2 class="headline headline-color--blanco text-center">Sala de ventas</h2>
       </div>
     </div>
     <div class="row">
@@ -153,6 +157,12 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
       </div>
     </div>
   </div>
+</section>
+
+<section id="section-map">
+<div class="container-fluid">
+  <div class="" id="map"></div>
+</div>
 </section>
 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
