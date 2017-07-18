@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cubica Montemar</title>
+    <!-- build:css css/master.css -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- endbuild -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="v-navbar">
+      <navbar></navbar>
+    </nav>
+
+
+<!-- Hero -->
+<section class="" id="section-hero">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2 class="text-center">Solicita una Cotización</h2>
+    </div>
+    <div class="col-sm-6">
+      <h2></h2>
+      <form class="" action="index.html" method="post">
+
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Intro -->
+<section id="section-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <p class="lead">Cúbica Montemar se encuentra ubicado en el exclusivo sector Bosques de Montemar, Concón. 3 edificios de 5 pisos, 55 departamentos con orientación norte, todos con vista al mar.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>Departamentos de 2 dormitorios y 2 baños, desde 99 m2 hasta 108 m2.
+Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita desde 164 m2 hasta 194 m2.
+* Todas estas superficies incluyen terrazas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tipos -->
+<section id="section-tipos">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Tipos de Departamentos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="nav nav-pills text-center center-block">
+            <li role="presentation" class="active"><a href="#101a401" data-toggle="tab">Deptos. 101 a 401</a></li>
+            <li role="presentation"><a href="#102a502" data-toggle="tab">Deptos. 102 a 502</a></li>
+            <li role="presentation"><a href="#103a503" data-toggle="tab">Deptos. 103 a 503</a></li>
+            <li role="presentation"><a href="#104a404" data-toggle="tab">Deptos. 104 a 404</a></li>
+            <li role="presentation"><a href="#104a504" data-toggle="tab">Depto. 504</a></li>
+            <li role="presentation"><a href="#104a511" data-toggle="tab">Depto. 511</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="tab-content clearfix">
+            <div class="tab-pane" :id="depto.id" v-for="depto in deptos">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <img :src="depto.imgsrc" :alt="depto.title" class="img-responsive">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h3>{{ depto.title }}</h3>
+                        <p>{{ depto.desc }}</p>
+                        <p>{{ depto.nota }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fuerza de Ventas -->
+<section id="section-domotica">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Tu hogar inteligente</h2>
+        <p class="lead text-center">Proyecto Cubica Montemar incluye los siguientes productos FIBARO</p>
+      </div>
+    </div>
+    <div class="row" id="productos">
+      <div class="col-xs-6 col-sm-3" v-for="producto in productos">
+        <img :src="producto.imgsrc" :alt="producto.title">
+        <h4>{{ producto.title }}</h4>
+        <p>{{ producto.cant }}</p>
+        <p>{{ producto.desc }}</p>
+        <a :href="producto.link">Ver más detalles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">¿Estás interesado en el proyecto?</h2>
+        <p class="text-center"><button type="button" name="button" class="btn btn-primary btn-lg">SOLICITA UNA COTIZACIÓN</button></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="section-ventas">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center">Sala de ventas</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <b>Dirección:</b>
+        <address>Los Abedules esq. San Andrés Bosques de Montemar Concón, V Región, Chile.</address>
+        <p>Horario: <br>
+          Lunes a Viernes de 10:30 a 18:30 horas. <br>
+          Sábado y Domingo de 10:30 a 19:30 horas. <br>
+          <br><br>
+          Teléfono: <br>
+          +562 29 466466 <br>
+          E-mail: <br>
+          ventas@cubicamontemar.cl</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <!-- script type="text/javascript" src="./temp/scripts/app-comp.js"></script -->
+    <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/vue.min.js"></script>
+    <script type="text/javascript" src="assets/js/modules/tipos.js"></script>
+    <script type="text/javascript" src="assets/js/modules/domotica.js"></script>
+    <script type="text/javascript" src="assets/js/modules/navbar.js"></script>
+  </body>
+</html>

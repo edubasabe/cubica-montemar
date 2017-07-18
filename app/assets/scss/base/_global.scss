@@ -1,0 +1,16 @@
+
+
+.btn {
+  &-primary {
+    background-color: $verde;
+    border: 0;
+    border-radius: .4rem;
+    transition: all 250ms ease;
+
+    &:hover {
+      background-color: rgba($verde, .8);
+
+
+    }
+  }
+}
