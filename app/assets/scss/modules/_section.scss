@@ -1,10 +1,18 @@
 .section {
+  @include xxs-device {
+    padding: 3rem 0;
+  }
   @include sm-device {
     padding: 6rem 0;
   }
 
   &__intro {
     background: url('../images/interior.jpg') no-repeat center;
+
+    @include xxs-device {
+      background-position: center bottom;
+      background-size: cover;
+    }
 
     @include sm-device {
       min-height: 66rem;
@@ -14,6 +22,14 @@
       color: $blanco;
       text-align: center;
 
+      @include xxs-device {
+        font-size: 1.6rem;
+      }
+
+      @include sm-device {
+        font-size: 2rem;
+      }
+
       @include md-device {
         font-size: 2rem;
       }
@@ -21,6 +37,14 @@
 
     &__text {
       color: $blanco;
+
+      @include xxs-device {
+        font-size: 1.6rem;
+      }
+      
+      @include sm-device {
+        font-size: 2rem;
+      }
 
       @include md-device {
         font-size: 2rem;

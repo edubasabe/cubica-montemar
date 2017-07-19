@@ -1,0 +1,46 @@
+.tipos {
+
+  &__image {
+    border: .1rem solid rgba($gris, .3);
+
+
+    @include xxs-device {
+      margin: 2rem auto;
+      // width: 30rem;
+    }
+
+
+    img {
+      margin: 1rem auto;
+      text-align: center;
+
+      @include xxs-device {
+        width: 30rem;
+      }
+    }
+  }
+
+  &__content {
+    color: $gris;
+  }
+
+  &__btn--mobile {
+    @include sm-device {
+      margin: 0 auto;
+    }
+
+    @include md-device {
+      display: none;
+    }
+  }
+
+  &__btn--desktop {
+    @include xxs-device {
+      display: none;
+    }
+
+    @include md-device {
+      display: inline-block;
+    }
+  }
+}

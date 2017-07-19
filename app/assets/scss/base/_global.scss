@@ -1,12 +1,16 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-}
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
 
+  @include xxs-device {
+    margin-top: 10rem;
+  }
+}
 
 .text-color--verde {
   color: $verde;
 }
+
 .text-color--gris {
   color: $gris;
 }

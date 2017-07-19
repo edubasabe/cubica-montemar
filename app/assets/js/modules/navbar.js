@@ -1,3 +1,4 @@
+//-- Template ------------------------------------------------------------------
 Vue.component('navbar', {
   template: `
       <div class="container">
@@ -31,3 +32,10 @@ Vue.component('navbar', {
 var navVue = new Vue({
   el: '#v-navbar'
 });
+
+
+//-- Top en el  ----------------------------------------------------------------
+var navHeight = $('#v-navbar').height();
+$('body').css({
+  'margin-top': navHeight + 'px'
+})
