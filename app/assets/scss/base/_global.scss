@@ -3,7 +3,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
 
   @include xxs-device {
-    margin-top: 10rem;
+    margin-top: 8.3rem;
+  }
+
+  @include sm-device {
+    margin-top: 6.5rem;
   }
 }
 
@@ -24,8 +28,14 @@ body {
 
     &:hover {
       background-color: rgba($verde, .8);
+    }
 
+    &:active {
+      background-color: rgba($verde, .5) !important;
+    }
 
+    &:focus {
+      background-color: $verde-dark;
     }
   }
 }

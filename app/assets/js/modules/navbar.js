@@ -36,6 +36,39 @@ var navVue = new Vue({
 
 //-- Top en el  ----------------------------------------------------------------
 var navHeight = $('#v-navbar').height();
-$('body').css({
-  'margin-top': navHeight + 'px'
-})
+
+if ( $(window).width() > 768 ) {
+  $('body').css({
+    'margin-top': navHeight + 'px'
+  });
+}
+
+function calcularMargin(element) {
+  var elementHeight = $(element).height();
+  var elementMargin = (navHeight - elementHeight) / 2 + 'px';
+  $(element).css({'margin-top': elementMargin, 'margin-bottom': elementMargin });
+}
+
+calcularMargin('.navbar-toggle');
+//------
+// jQuery to collapse the navbar on scroll
+//------
+
+$(window).scroll(function() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    }
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});

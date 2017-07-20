@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cubica Montemar</title>
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
     <!-- build:css css/master.css -->
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/lightbox.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- endbuild -->
 
@@ -16,7 +20,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="v-navbar">
       <navbar></navbar>
     </nav>
@@ -29,31 +33,37 @@
     <div class="col-sm-6">
       <div class="hero__logo">
         <p><img src="./assets/images/logo-proyecto.png" srcset="./assets/images/logo-proyecto@2x.png 2x" alt="Cubica Montemar" class="center-block img-responsive"></p>
-        <h2 class="hero__logo__headline headline-color--blanco text-center">ARQUITECTURA Y DISEÑO <br> PARA VIVIR MEJOR</h2>
+        <h2 class="hero__logo__headline headline-color--blanco text-center">ARQUITECTURA Y DISEÑO <br> PARA VIVIR MEJOR <br> EN UN HOGAR INTELIGENTE</h2>
+        <p class="text-center hero__cta"><a href="#" class="btn btn-lg btn-primary" id="btn-cotizacion">Solicitar Cotización</a></p>
       </div>
     </div>
     <div class="col-sm-6">
-      <form class="hero__form" action="index.html" method="post">
+      <form class="hero__form" action="https://s242003202.t.eloqua.com/e/f2" method="post" name="cubica-montemar" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form42 input[type=submit]');if(s){s.disabled=true;}}},100);return true;" id="form42">
         <legend>Solicita una Cotización</legend>
+        <input value="cubica-montemar" type="hidden" name="elqFormName"  />
+        <input value="242003202" type="hidden" name="elqSiteId"  />
+        <input name="elqCampaignId" type="hidden"  />
+        <input type="hidden" name="elqCustomerGUID" value="">
+        <input type="hidden" name="elqCookieWrite" value="0">
         <!-- nombre -->
         <div class="form-group">
             <label for="firstname" class="sr-only">Nombre</label>
-            <input id="firstname" name="firstName" type="text" placeholder="Nombre" class="form-control input-md" min-lenght="2" arequired>
+            <input id="firstname" name="firstName" type="text" placeholder="Nombre" class="form-control input-md" minlenght="2" required>
         </div>
         <!-- email -->
         <div class="form-group">
             <label for="email" class="sr-only">Email</label>
-            <input id="email" name="emailAddress" type="email" placeholder="Email" class="form-control input-md" arequired>
+            <input id="email" name="emailAddress" type="email" placeholder="Email" class="form-control input-md" required>
         </div>
         <!-- teléfono -->
         <div class="form-group">
             <label for="telefono" class="sr-only">Teléfono</label>
-            <input id="telefono" name="phone" type="text" placeholder="Teléfono" class="form-control input-md" min-length="" arequired>
+            <input id="telefono" name="mobilePhone" type="text" placeholder="Teléfono" class="form-control input-md" minlength="9" maxlength="10"required>
         </div>
         <!-- Mensaje -->
         <div class="form-group">
             <label for="nombre" class="sr-only">Mensaje</label>
-            <textarea id="nombre" name="message" placeholder="Mensaje" class="form-control input-md" arequired></textarea>
+            <textarea id="nombre" name="message" placeholder="Mensaje" class="form-control input-md" required></textarea>
             <br>
             <input type="submit" name="" value="Solicitar" class="btn btn-primary btn-lg btn-block">
         </div>
@@ -87,7 +97,7 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
 </section>
 
 <!-- Tipos -->
-<section class="section" id="section-tipos">
+<section class="tipos section" id="section-tipos">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -108,22 +118,11 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
             <li role="presentation"><a href="#102a502" data-toggle="tab">Deptos. 102 a 502</a></li>
             <li role="presentation"><a href="#103a503" data-toggle="tab">Deptos. 103 a 503</a></li>
             <li role="presentation"><a href="#104a404" data-toggle="tab">Deptos. 104 a 404</a></li>
-            <li role="presentation"><a href="#104a504" data-toggle="tab">Depto. 504</a></li>
-            <li role="presentation"><a href="#104a511" data-toggle="tab">Depto. 511</a></li>
+            <li role="presentation"><a href="#504" data-toggle="tab">Depto. 504</a></li>
+            <li role="presentation"><a href="#511" data-toggle="tab">Depto. 511</a></li>
           </ul>
         </div>
       </div>
-
-        <!-- Buttons Desktop  -->
-
-        <!-- <ul class="nav nav-pills text-center center-block tipos__btn--desktop">
-            <li role="presentation" class="active"><a href="#101a401" data-toggle="tab">Deptos. 101 a 401</a></li>
-            <li role="presentation"><a href="#102a502" data-toggle="tab">Deptos. 102 a 502</a></li>
-            <li role="presentation"><a href="#103a503" data-toggle="tab">Deptos. 103 a 503</a></li>
-            <li role="presentation"><a href="#104a404" data-toggle="tab">Deptos. 104 a 404</a></li>
-            <li role="presentation"><a href="#104a504" data-toggle="tab">Depto. 504</a></li>
-            <li role="presentation"><a href="#104a511" data-toggle="tab">Depto. 511</a></li>
-        </ul> -->
       </div>
 
       <div class="btn-group btn-group-justified tipos__btn--desktop" role="group">
@@ -131,19 +130,19 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
         <a href="#102a502" class="btn btn-lg btn-primary" data-toggle="tab">Deptos. 102 a 502</a>
         <a href="#103a503" class="btn btn-lg btn-primary" data-toggle="tab">Deptos. 103 a 503</a>
         <a href="#104a404" class="btn btn-lg btn-primary" data-toggle="tab">Deptos. 104 a 404</a>
-        <a href="#104a504" class="btn btn-lg btn-primary" data-toggle="tab">Depto. 504</a>
-        <a href="#104a511" class="btn btn-lg btn-primary" data-toggle="tab">Depto. 511</a>
+        <a href="#504" class="btn btn-lg btn-primary" data-toggle="tab">Depto. 504</a>
+        <a href="#511" class="btn btn-lg btn-primary" data-toggle="tab">Depto. 511</a>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-12">
         <div class="tab-content clearfix">
-            <div class="tab-pane" :id="depto.id" v-for="depto in deptos">
+            <div :class="depto.class" :id="depto.id" v-for="depto in deptos">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                      <div class="tipos__image">
+                      <a class="tipos__image" :href="depto.imgsrc" :data-lightbox="depto.id" :data-title="depto.title">
                         <img :src="depto.imgsrc" :alt="depto.title" class="img-responsive">
-                      </div>
+                      </a>
                     </div>
                     <div class="col-xs-12 col-sm-6">
                       <div class="tipos__content">
@@ -153,15 +152,11 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
                         <ul class="list-unstyled">
                           <li>Superficie Útil: {{ depto.util }}M<sup>2</sup></li>
                           <li>Superficie Terraza: {{ depto.terraza }}M<sup>2</sup></li>
+                          <li class="panoramica">{{ depto.panoramica }}</li>
                           <li>Superficie Total: {{ depto.total }}M<sup>2</sup></li>
                         </ul>
                         <hr>
                         <h4 class="headline-color--verde">Especificaciones</h4>
-                        <ul class="list-unstyled">
-                          <li></li>
-                        </ul>
-
-
                         <p>{{ depto.desc }}</p>
                         <p>{{ depto.nota }}</p>
                       </div>
@@ -174,13 +169,14 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
   </div>
 </section>
 
+<hr style="margin:0;">
 <!-- Fuerza de Ventas -->
 <section class="section" id="section-domotica">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="headline headline-color--verde text-center">Tu hogar inteligente</h2>
-        <p class="lead headline-color--gris text-center">Proyecto Cubica Montemar incluye los siguientes productos FIBARO</p>
+        <h2 class="headline headline-no-margin headline-color--verde text-center">Tu hogar inteligente</h2>
+        <p class="lead headline__lead headline-color--gris text-center">Proyecto Cubica Montemar incluye los siguientes productos FIBARO</p>
       </div>
     </div>
     <div class="row product" id="productos">
@@ -201,7 +197,7 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
     <div class="row">
       <div class="col-sm-12">
         <h2 class="headline headline-color--blanco text-center">¿Estás interesado en el proyecto?</h2>
-        <p class="text-center"><button type="button" name="button" class="btn btn-primary btn-lg">SOLICITA UNA COTIZACIÓN</button></p>
+        <p class="text-center"><a href="#section-hero" class="btn btn-primary btn-lg">SOLICITA UNA COTIZACIÓN</a></p>
       </div>
     </div>
   </div>
@@ -245,14 +241,60 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
   </div>
 </footer>
 
+
+<div class="modal fade" id="form-cotizacion" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          <svg width="10" height="10">
+            <line x1="0" y1="0" x2="10" y2="10" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+            <line x1="0" y1="10" x2="10" y2="0" style="stroke:rgb(0,0,0);stroke-width:2"></line>
+          </svg>
+        </button>
+        <form class="hero__form" action="https://s242003202.t.eloqua.com/e/f2" method="post" name="cubica-montemar">
+          <legend>Solicita una Cotización</legend>
+          <input value="cubica-montemar" type="hidden" name="elqFormName"  />
+          <input value="242003202" type="hidden" name="elqSiteId"  />
+          <input name="elqCampaignId" type="hidden"  />
+          <input type="hidden" name="elqCustomerGUID" value="">
+          <input type="hidden" name="elqCookieWrite" value="0">
+          <!-- nombre -->
+          <div class="form-group">
+              <label for="firstname" class="sr-only">Nombre</label>
+              <input id="firstname" name="firstName" type="text" placeholder="Nombre" class="form-control input-md" min-lenght="2" required>
+          </div>
+          <!-- email -->
+          <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input id="email" name="emailAddress" type="email" placeholder="Email" class="form-control input-md" required>
+          </div>
+          <!-- teléfono -->
+          <div class="form-group">
+              <label for="telefono" class="sr-only">Teléfono</label>
+              <input id="telefono" name="mobilePhone" type="text" placeholder="Teléfono" class="form-control input-md" min-length="9" required>
+          </div>
+          <!-- Mensaje -->
+          <div class="form-group">
+              <label for="nombre" class="sr-only">Mensaje</label>
+              <textarea id="nombre" name="message" placeholder="Mensaje" class="form-control input-md" required></textarea>
+              <br>
+              <input type="submit" value="Solicitar" class="btn btn-primary btn-lg btn-block">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
        function initMap() {
            // Create a map object and specify the DOM element for display.
-           var myLatLng = { lat: -38.6624555, lng: -72.504119 };
+           var myLatLng = { lat: -32.939751, lng: -71.536022 };
            var map = new google.maps.Map(document.getElementById('map'), {
                center: myLatLng,
                scrollwheel: false,
-               zoom: 15
+               zoom: 17
            });
            var marker = new google.maps.Marker({
              position: myLatLng,
@@ -262,13 +304,15 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
        }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIsPoE_GzkK3Cab2YJncgdSz7PQZY61N8&callback=initMap" async defer></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+    <!-- build:js scripts.min.js -->
     <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/jquery.easing.min.js"></script>
     <script type="text/javascript" src="assets/js/vendor/vue.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/lightbox.min.js"></script>
     <script type="text/javascript" src="assets/js/modules/tipos.js"></script>
     <script type="text/javascript" src="assets/js/modules/domotica.js"></script>
     <script type="text/javascript" src="assets/js/modules/navbar.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

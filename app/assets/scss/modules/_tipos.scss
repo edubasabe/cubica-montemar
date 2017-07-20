@@ -2,6 +2,7 @@
 
   &__image {
     border: .1rem solid rgba($gris, .3);
+    display: block;
 
 
     @include xxs-device {
@@ -15,7 +16,8 @@
       text-align: center;
 
       @include xxs-device {
-        width: 30rem;
+        width: 25rem;
+
       }
     }
   }
@@ -25,8 +27,40 @@
   }
 
   &__btn--mobile {
+
+    &.open {
+        > .dropdown-menu {
+          width: 100%;
+
+          > .active {
+            a {
+              background-color: $verde;
+              color: $blanco;
+            }
+          }
+
+          li {
+            a {
+              color: $gris;
+              font-size: 1.8rem;
+              line-height: 2;
+            }
+          }
+        }
+
+        > .dropdown-toggle {
+          &.btn-primary {
+            &:hover {
+              background-color: $verde-dark;
+            }
+          }
+        }
+      }
+
+
     @include sm-device {
       margin: 0 auto;
+      margin-bottom: 3rem;
     }
 
     @include md-device {
@@ -43,4 +77,6 @@
       display: inline-block;
     }
   }
+
+
 }

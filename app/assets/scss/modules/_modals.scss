@@ -1,0 +1,18 @@
+.modal {
+  .hero__form {
+    @include xxs-device {
+      display: block;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+#form-cotizacion {
+  button {
+    &.close {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}

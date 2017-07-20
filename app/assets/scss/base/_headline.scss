@@ -1,9 +1,25 @@
 .headline {
   @include xxs-device {
     font-size: 3rem;
+    margin-bottom: 3rem;
   }
+
+  @include sm-device {
+    margin-bottom: 3rem;
+  }
+
   @include md-device {
     font-size: 3.6rem;
+  }
+
+  &-no-margin {
+    margin-bottom: 0;
+  }
+
+  &__lead {
+    @include xxs-device {
+      margin-bottom: 3rem;
+    }
   }
 
   &-color--blanco {

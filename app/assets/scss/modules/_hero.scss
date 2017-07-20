@@ -1,15 +1,17 @@
 .hero {
   background: url('../images/proyecto.jpg') no-repeat center;
+  overflow: hidden;
   position: relative;
 
   @include xxs-device {
     background-size: cover;
-    height: 90vh;
+    height: 77vh;
   }
 
   @include sm-device {
     height: 91.2vh;
   }
+
 
   &__device {
     bottom: 0;
@@ -17,7 +19,8 @@
     position: absolute;
 
     @include xxs-device {
-      transform: scale(.6);
+      bottom: -6rem;
+      transform: scale(.5);
       transform-origin: left bottom;
     }
 
@@ -27,9 +30,22 @@
   }
 
   &__logo {
+    p {
+       @include xxs-device {
+         margin-bottom: 0;
+       }
+
+       img {
+         @include xxs-device {
+           transform: scale(.8);
+         }
+       }
+    }
+
 
     @include xxs-device {
       margin: 3rem auto;
+      margin-top: 1rem;
     }
 
     @include sm-device {
@@ -46,7 +62,18 @@
 
       @include xxs-device {
         font-size: 2rem;
+        margin-top: 0;
       }
+    }
+  }
+
+  &__cta {
+    @include xxs-device {
+      display: block;
+    }
+
+    @include sm-device {
+      display: none;
     }
   }
 
