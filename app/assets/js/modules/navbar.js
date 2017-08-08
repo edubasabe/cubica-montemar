@@ -9,7 +9,7 @@ Vue.component('navbar', {
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
           </button>
-              <a class="navbar-brand page-scroll" href="#page-top"><span class="sr-only">Masterplan</span><img src="./assets/images/logo.png" srcset="./assets/images/logo@2x.png 2x" alt="Masterplan"></a>
+              <a class="navbar-brand page-scroll" href="#page-top"><span class="sr-only">Masterplan</span><img src="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/logo.png" srcset="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/logo@2x.png 2x" alt="Masterplan"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
