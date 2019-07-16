@@ -25,8 +25,8 @@ var autoprefixerOptions = {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      // baseDir: 'app'
-      baseDir: 'dist'
+      baseDir: 'app'
+      // baseDir: 'dist'
     },
   });
 });

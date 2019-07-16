@@ -1,11 +1,12 @@
 var deptos = new Vue({
+  name: 'Deptos',
   el: '#section-tipos',
   data: {
     deptos: [
       {
         id: '101a401',
         class: 'tab-pane active',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/101a401.jpg',
+        imgsrc: './assets/images/101a401.jpg',
         title: 'Departamentos 101 a 401',
         desc: '3 Dormitorios / 1 en suite - 2 Baños completos - Walking closet - Baño visita - Espaciosa cocina equipada - Sala de estar - 2 terrazas',
         nota: '* Depto. 101 con gradas en 1er nivel',
@@ -16,7 +17,7 @@ var deptos = new Vue({
       {
         id: '102a502',
         class: 'tab-pane',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/102a502.jpg',
+        imgsrc: './assets/images/102a502.jpg',
         title: 'Departamentos 102 a 502',
         desc: '2 dormitorios / 1 en suite - 2 baños completos - Walking closet - Espaciosa cocina equipada - 2 terrazas',
         nota: '* PRIMER PISO ALTURA DE PISO A CIELO 2.90 M. SEGUNDO A QUINTO PISO ALTURA DE 2.60 M.',
@@ -27,7 +28,7 @@ var deptos = new Vue({
       {
         id: '103a503',
         class: 'tab-pane',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/103a503.jpg',
+        imgsrc: './assets/images/103a503.jpg',
         title: 'Departamentos 103 a 503',
         desc: '2 dormitorios / 1 en suite - 2 baños completos - Walking closet - Espaciosa cocina equipada - 2 terrazas',
         nota: '* PRIMER PISO ALTURA DE PISO A CIELO 2.90 M. SEGUNDO A QUINTO PISO ALTURA DE 2.60 M.',
@@ -38,7 +39,7 @@ var deptos = new Vue({
       {
         id: '104a404',
         class: 'tab-pane',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/104a404.jpg',
+        imgsrc: './assets/images/104a404.jpg',
         title: 'Departamentos 104 a 404',
         desc: '3 dormitorios / 1 en suite - 2 baños completos - Walking closet - Espaciosa cocina equipada - Baño de visita - Sala de estar - 2 terrazas',
         nota: '* DEPTO 104 CON GRADAS EN 1ER NIVEL.',
@@ -49,7 +50,7 @@ var deptos = new Vue({
       {
         id: '504',
         class: 'tab-pane',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/504-01.jpg',
+        imgsrc: './assets/images/504-01.jpg',
         title: 'Departamentos 504',
         desc: `3 dormitorios / 1 en suite - 2 baños completos - Walking closet - Espaciosa cocina equipada - Baño visita - Sala de estar - 2 terrazas - Terraza panorámica de uso exclusivo`,
         util: '140.02',
@@ -61,7 +62,7 @@ var deptos = new Vue({
       {
         id: '511',
         class: 'tab-pane',
-        imgsrc: 'https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/511-01.jpg',
+        imgsrc: './assets/images/511-01.jpg',
         title: 'Departamentos 511',
         desc: '3 dormitorios / 1 en suite - 3 baños completos - Walking closet - Baño visita - Sala de estar - Espaciosa cocina equipada - Amplia terraza - terraza panorámica de uso exclusivo',
         util: '1238.32',

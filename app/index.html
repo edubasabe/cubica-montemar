@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cubica Montemar</title>
-    <link rel="icon" type="image/png" sizes="192x192"  href="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/favicon-16x16.png">
-    <!-- build:css assets/css/lib/frameworks.min.css -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <!-- build:css ./assets/css/lib/frameworks.min.css -->
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/vendor/lightbox.css">
     <!-- endbuild -->
-    <!-- build:css assets/css/style.min.css -->
+    <!-- build:css ./assets/css/style.min.css -->
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- endbuild -->
 
@@ -22,10 +22,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy="scroll" data-target=".navbar-fixed-top">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="v-navbar">
+  <body data-spy="scroll" data-target=".navbar-fixed-top" id="home">
+    <div id="nav">
       <navbar></navbar>
-    </nav>
+    </div>
+  
 
 
 <!-- Hero -->
@@ -34,7 +35,7 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="hero__logo">
-        <p><img src="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/logo-proyecto.png" srcset="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/logo-proyecto@2x.png 2x" alt="Cubica Montemar" class="center-block img-responsive"></p>
+        <p><img src="./assets/images/logo-proyecto.png" srcset="./assets/images/logo-proyecto@2x.png 2x" alt="Cubica Montemar" class="center-block img-responsive"></p>
         <h2 class="hero__logo__headline headline-color--blanco text-center">ARQUITECTURA Y DISEÑO <br> PARA VIVIR MEJOR <br> EN UN HOGAR INTELIGENTE</h2>
         <p class="text-center hero__cta"><a href="#" class="btn btn-lg btn-primary" id="btn-cotizacion">Solicitar Cotización</a></p>
       </div>
@@ -74,7 +75,7 @@
   </div>
 </div>
 <div class="hero__device">
-  <img src="https://tuhogarinteligente.cl/inmobi/cubica-montemar/assets/images/mano.png" alt="App" class="img-responsive">
+  <img src="./assets/images/mano.png" alt="App" class="img-responsive">
 </div>
 </section>
 
@@ -306,17 +307,20 @@ Departamentos de 3 dormitorios con 2 y 3 baños, sala de estar y baño visita de
        }
    </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIsPoE_GzkK3Cab2YJncgdSz7PQZY61N8&callback=initMap" async defer></script>
+
+   <!-- <script type="text/javascript" src="./assets/js/vendor/vue.min.js"></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <!-- build:js assets/js/vendor/vendor.min.js -->
-    <script type="text/javascript" src="assets/js/vendor/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/vue.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/lightbox.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="./assets/js/vendor/lightbox.min.js"></script>
     <!-- endbuild -->
     <!-- build:js assets/js/bundle.js -->
-    <script type="text/javascript" src="assets/js/modules/tipos.js"></script>
-    <script type="text/javascript" src="assets/js/modules/domotica.js"></script>
-    <script type="text/javascript" src="assets/js/modules/navbar.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/tipos.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/domotica.js"></script>
+    <script type="text/javascript" src="./assets/js/modules/navbar.js"></script>
     <!-- endbuild -->
   </body>
 </html>
