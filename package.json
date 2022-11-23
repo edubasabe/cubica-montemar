@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/edubasabe/cubica-montemar#readme",
   "devDependencies": {
-    "browser-sync": "^2.17.5",
+    "browser-sync": "^2.27.10",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
